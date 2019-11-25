@@ -20,5 +20,9 @@ global.F = {
     return {
       path: join(ROOT, 'views', ...args)
     }
+  },
+
+  get lists() {
+    return require(join(ROOT, 'lists'))
   }
 }
